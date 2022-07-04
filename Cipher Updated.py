@@ -4,9 +4,6 @@ from logo import logo
 
 print(logo)
 
-
-
-
 # print(chars)
 
 
@@ -44,6 +41,8 @@ print(logo)
 # ceasar(text, shift, direction)
 
 should_continue = True
+
+
 # decrypt(coded_text=text, shift_amount=shift)
 # if direction == "encode":
 #     encrypt(plain_text=text, shift_amount=shift)
@@ -72,7 +71,6 @@ def ceaser(in_put, shift_amount, side):
         should_continue = True
 
 
-
 while should_continue:
     direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
     text = input("Type your message:\n").lower()
@@ -80,5 +78,3 @@ while should_continue:
     # chars = list(text)
     chars = list(text)
     ceaser(in_put=text, shift_amount=shift, side=direction)
-
-
